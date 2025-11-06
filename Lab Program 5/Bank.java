@@ -26,7 +26,7 @@ class Account {
     }
 }
 
-// ------------------- SAVINGS ACCOUNT CLASS -------------------
+
 class SavAccount extends Account {
     SavAccount(String n, int a, double b) {
         super(n, a, "saving", b);
@@ -49,7 +49,7 @@ class SavAccount extends Account {
     }
 }
 
-// ------------------- CURRENT ACCOUNT CLASS -------------------
+
 class CurAccount extends Account {
     CurAccount(String n, int a, double b) {
         super(n, a, "current", b);
@@ -74,7 +74,7 @@ class CurAccount extends Account {
     }
 }
 
-// ------------------- MAIN BANK CLASS -------------------
+
 class Bank {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -144,3 +144,4 @@ class Bank {
         } while (choice != 5);
     }
 }
+
