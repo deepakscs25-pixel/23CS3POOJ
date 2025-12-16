@@ -4,11 +4,11 @@ interface Resizable{
     void display();
 }
 
-class Triangle implements Resizable{
+class Rectangle implements Resizable{
     int width;
     int height;
     
-    Triangle(int width,int height){
+    Rectangle(int width,int height){
         this.width=width;
         this.height=height;
     }
@@ -30,10 +30,11 @@ class Triangle implements Resizable{
 
 class Main{
     public static void main(String[] args) {
-        Resizable t=new Triangle(3,4);
-        t.display();
-        t.resizeHeight(6);
-        t.resizeWidth(8);
-        t.display();
+        Resizable r=new Rectangle (3,4);
+        r.display();
+        r.resizeHeight(6);
+        r.resizeWidth(8);
+        r.display();
     }
+
 }
